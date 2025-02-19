@@ -11,7 +11,7 @@ sequelize.authenticate()
                 return sequelize.sync()
             })
             .catch(err => {
-                console.error('418')
+                console.error('418', err)
             })
 
 module.exports = sequelize;
